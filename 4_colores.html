@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+</head>
+<body>
+
+<div style="display: flex; justify-content: center">
+<div id="divBlue" style="display: flex; width: 200px; height: 200px; background-color: blue;"> </div>
+
+<div id="divRed" style="display: flex; width: 200px; height: 200px; background-color: red;"> </div>
+
+<div id="divGreen" style="display: flex; width: 200px; height: 200px; background-color: green;"> </div>
+
+<div id="divYellow" style="display: flex; width: 200px; height: 200px; background-color: yellow;" > </div>
+
+</div>
+
+
+
+<script>
+
+function cambiarFondo(event) {
+      event.target.style.backgroundColor = 'black';
+    }
+
+
+    document.getElementById("divBlue").addEventListener("click", cambiarFondo);
+    document.getElementById("divRed").addEventListener("click", cambiarFondo);
+    document.getElementById("divGreen").addEventListener("click", cambiarFondo);
+    document.getElementById("divYellow").addEventListener("click", cambiarFondo);
+    
+
+
+</script>    
+</body>
+</html>
